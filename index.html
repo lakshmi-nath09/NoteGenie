@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NoteGenie - Smart Notes Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🧞 NoteGenie</h1>
+<p>Generate Smart Study Notes Instantly</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<label>Select Subject</label>
+<select id="subject">
+<option>Artificial Intelligence</option>
+<option>DBMS</option>
+<option>Operating Systems</option>
+<option>Computer Networks</option>
+<option>Mathematics</option>
+<option>Physics</option>
+<option>Chemistry</option>
+</select>
+
+<label>Enter Topic</label>
+<input type="text" id="topic" placeholder="Example: Machine Learning">
+
+<button onclick="generateNotes()">Generate Notes</button>
+
+</div>
+
+</div>
+
+<div class="output" id="notesOutput">
+
+<h2>Generated Notes</h2>
+
+<table>
+<tr>
+<th>Section</th>
+<th>Content</th>
+</tr>
+
+<tr>
+<td>Definition</td>
+<td id="def"></td>
+</tr>
+
+<tr>
+<td>Key Points</td>
+<td id="points"></td>
+</tr>
+
+<tr>
+<td>Applications</td>
+<td id="apps"></td>
+</tr>
+
+<tr>
+<td>Advantages</td>
+<td id="adv"></td>
+</tr>
+
+<tr>
+<td>Summary</td>
+<td id="sum"></td>
+</tr>
+
+</table>
+
+<button class="copybtn" onclick="copyNotes()">Copy Notes</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
